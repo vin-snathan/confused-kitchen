@@ -1,0 +1,294 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*---------
+
+JUMBOTRON
+
+-----------*/
+
+.jumbotron {
+  height: 100vh;
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),url(./img/menuImg.jpeg);
+  background-size: cover;
+  display: flex;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+.jumbotron-cta {
+  margin: auto;
+  color: white;
+  text-align: center;
+}
+
+.jumbotron-cta .btn-about {
+  background-color: red;
+  color: white !important;
+  border-radius: 0;
+  font-weight: bold;
+}
+
+/*---------
+
+NAVBAR
+
+-----------*/
+
+.navbar {
+  border-radius: 0;
+  margin-bottom: 0;
+  background: none;
+}
+
+.navbar-inverse .navbar-brand, .navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  transition: 0.2s ease;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover {
+  color: red;
+}
+
+.navbar.navbar-inverse {
+  background-color: rgba(0,0,0, 0.95);
+  border-color: transparent;
+  border-color: #000;
+}
+
+.navbar-brand .nav-span {
+  color: red;
+  font-weight: bold;
+}
+
+/*---------
+
+SECTION
+
+-----------*/
+
+.section-about {
+  padding: 70px 0;
+}
+
+/*---------
+
+ABOUT
+
+-----------*/
+
+#about {
+  background: url(./img/biryani.jpeg);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#about .about-container {
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: space-between;
+}
+
+#about .about-container .about-text-container, #about .about-container .about-figure {
+  flex-basis: 45%;
+}
+
+#about .about-container .about-text-container {
+  display: flex;
+  align-items: center;
+  padding-left: 10%;
+}
+
+#about .about-container .about-text {
+  line-height: 2.25;
+  font-size: 20px;
+  text-align: justify;
+  color: #fff;
+}
+
+#about .about-container .about-text .about-title {
+  font-size: 38px;
+  color: red;
+}
+
+#about .about-container .about-text .about-hr {
+  border-top: 1px solid black;
+}
+
+#about .about-container .about-figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media only screen and (max-width: 992px) {
+  #about .about-container .about-text-container {
+    flex-basis: 85%;
+    justify-content: space-around;
+  }
+
+  #about .about-container .about-figure {
+    display: none;
+  }
+}
+
+/*---------
+
+GALLERY
+
+-----------*/
+
+#gallery .gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#gallery .gallery-container .gallery-figure {
+  display: flex;
+  height: 250px;
+  flex-basis: 25%;
+  background-color: black;
+}
+
+#gallery .gallery-container .gallery-figure img {
+  width: 100%;
+  opacity: 0.8;
+}
+
+#gallery .gallery-container .gallery-figure img:hover {
+  opacity: 1;
+}
+
+@media only screen and (max-width: 400px) {
+  #gallery .gallery-container .gallery-figure {
+    flex-basis: 100%;
+  }
+}
+
+@media only screen and (min-width: 401px) {
+  #gallery .gallery-container .gallery-figure {
+    flex-basis: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #gallery .gallery-container .gallery-figure {
+    flex-basis: 25%;
+  }
+}
+
+/*---------
+
+REVIEWS
+
+-----------*/
+
+#reviews {
+  background: url(./img/restaurant_patrons.jpeg);
+  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#reviews .reviews-title, .reviews-link {
+  text-align: center;
+  color: #fff;
+  font-size: 32px;
+  margin: 25px 0;
+}
+
+#reviews .reviews-container {
+  display: flex;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
+}
+
+#reviews .review {
+  flex-basis: 30%;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+#reviews .review .review-author {
+  color: #000;
+  font-weight: bold;
+  margin: 0;
+}
+
+#reviews .review .review-star {
+  color: #F8700D;
+}
+
+#reviews .review .review-date {
+  padding-left: 10px;
+  color: #777;
+}
+
+.review-star-container {
+  display: inline;
+}
+
+#reviews .reviews-link a {
+  margin-top: 20px;
+  font-size: 19px;
+  background-color: red;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #reviews .reviews-container {
+    flex-direction: column;
+  }
+
+  #reviews .review {
+    margin: 10px 0;
+  }
+}
+
+/*---------
+
+LOCATION
+
+-----------*/
+
+#location {
+  background: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)), url(./img/restaurantVintageTable.jpg);
+  background-size: cover;
+}
+
+#location .location-container {
+  display: flex;
+  justify-content: center;
+  color: white;
+}
+
+#location .location-container .location-address, #location .location-container .location-hours {
+  padding: 20px;
+}
+
+#location .title {
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+#location p {
+  font-size: 16px;
+}
+
+@media only screen and (max-width: 600px) {
+  #location .location-container {
+    flex-direction: column;
+  }
+}
